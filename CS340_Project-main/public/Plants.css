@@ -1,0 +1,68 @@
+/*CSS reset settings here*/
+
+body {
+    /* background: cornflowerblue; */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+div.header h1 {
+    height: 40px;
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+    font-family: Georgia;
+}
+
+div.outer-content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    background-color: #333333;
+}
+
+div.inner-content {
+    position: relative;
+    margin: 10px auto;
+    width: 75%;
+    color: #faf0e6;
+}
+
+form {
+    border: solid 1px black;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.li {
+    align-items: center;
+}
+
+.images-container {
+    margin-top: 50px;
+}
+
+.header {
+    background-color: linen;
+    width: 985px;
+    font-family: Georgia;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.scrollmenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+}

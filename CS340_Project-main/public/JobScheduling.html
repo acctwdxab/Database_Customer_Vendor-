@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Job Scheduling</title>
+    <link rel="stylesheet" type="text/css" href="JobScheduling.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 style="font-size: 20px;">Scheduling A Job</h1>
+        <div class="container">
+        </div>
+    </div>
+    <style>
+        div.scrollmenu {
+            background-color: #333;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+        
+        div.scrollmenu a:hover {
+            background-color: #777;
+        }
+    </style>
+    <div class="scrollmenu">
+        <a href="index.html">Home</a>
+        <a href="PurchaseOrder.html">The Purchase Order</a>
+        <a href="ContractSalesOrder.html">Current Sales Order</a>
+        <a href="CurrentCustomers.html">Current Customers</a>
+        <a href="EnterFSRreport.html">Enter FSR Report</a>
+        <div class="input-group">
+            <input type="search" class="form-control rounded" id="search-key" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" id="search-button" class="search">search</button>
+        </div>
+
+
+    </div>
+
+    <div id="wrapper">
+
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Add a Job</title>
+
+        </head>
+
+        <body>
+            <div class="container-fluid" id="container-div">
+                <h2>Job Scheduling</h2>
+                 <form id="post-form">
+<!--                    <label for="employeeID">Employee ID: </label>
+                    <input type="number" name="name" placeholder="employeeID" id="employeeID-input" required> -->
+                    <label for="supervisorID">Supervisor ID: </label>
+                    <input type="number" name="supervisorID" placeholder="00000" id="supervisorID-input"></br>
+                    <label for="department">Department: </label>
+                    <input type="text" name="department" placeholder="admin" id="department-input">
+                    <label for="title">Job Title: </label>
+                    <input type="text" name="title" placeholder="title" id="jobTitle-input">
+                    <label for="salesorderID">Sales Order Number: </label>                    
+                    <input type="submit" value="Submit" id="post-button" class="btn btn-success">
+
+
+                </form>
+
+                <h2>Update Job Scheduling Information:</h2>
+                <table id="jobList">
+                    <thead>
+                        <tr>
+                            <th>Employee ID</th>
+                            <th>Supervisor ID</th>
+                            <th>Department</th>
+                            <th>Job Title</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                        <tbody id="jobListBody">
+                        </tbody>
+                    </table>
+                <!-- <form id="update-form">
+                    <h2>Update job:</h2>
+                    <label for="employeeID">Employee ID: </label>
+                    <input type="number" name="name" placeholder="employeeID" id="employeeID-input" required>
+                    <label for="supervisorID">Supervisor ID: </label>
+                    <input type="number" name="supervisorID" placeholder="00000" id="supervisorID-input">
+                    <label for="department">Department: </label>
+                    <input type="text" name="department" placeholder="admin" id="department-input">
+                    <label for="title">Job Title: </label>
+                    <input type="text" name="title" placeholder="title" id="jobTitle-input">
+                    <input type="submit" value="Submit" id="post-button" class="btn btn-success">
+
+
+                </form> -->
+
+            </div>
+    
+            <script src="JobScheduling.js"></script>
+        </body>
+
+
+      
+
+    </div>
+
+
+    </div>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

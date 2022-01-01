@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Current Customers</title>
+    <link rel="stylesheet" type="text/css" href="CurrentCustomers.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 style="font-size: 20px;">Current Customers</h1>
+        <div class="container">
+        </div>
+    </div>
+    <style>
+        div.scrollmenu {
+            background-color: #333;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+        
+        div.scrollmenu a:hover {
+            background-color: #777;
+        }
+    </style>
+    <div class="scrollmenu">
+        <a href="index.html">Home</a>
+        <a href="PurchaseOrder.html">The Purchase Order</a>
+        <a href="ContractSalesOrder.html">Current Sales Order</a>
+        <a href="JobScheduling.html">Engineer Booking</a>
+        <a href="EnterFSRreport.html">Enter FSR Report</a>
+        <div class="input-group">
+            <input type="search" class="form-control rounded" id="search-key" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" id="search-button" class="search">search</button>
+        </div>
+
+        
+    </div>
+
+    <div id="wrapper">
+	    
+        <div class="container-fluid" id="container-div">
+            <h2>Add Customer:</h2>
+            <form id="newCustomer">
+                <!-- <label for="customerID">Customer ID: </label> -->
+                <!-- <input type="number" name="name" placeholder="customerID" id="name-input" required> -->
+                <label for="email">Email: </label>
+                <input type="text" name="email" placeholder="email" id="email-input">
+                <label for="entityname">Entity Name: </label>
+                <input type="text" name="entityname" placeholder="entityname" id="entityName-input">
+                <label for="location">Location: </label>
+                <input type="text" name="location" placeholder="location" id="location-input">
+                <!-- <label for="date">Date: </label>
+                <input type="date" name="date" placeholder="Date" id="date-input" required> -->
+                <input type="submit" value="Submit" id="post-button" class="btn btn-success">
+            </form>
+
+            <!-- <button id="reset-button" class="btn btn-danger">Reset Table</button> -->
+			
+			<h2>Update/Delete Customer Information:</h2>
+<!--             <form id="update-form">                
+                <label for="customerID">Customer ID: </label>
+                <input type="number" name="name" placeholder="customerID" id="name-input" required>
+                <label for="email">Email: </label>
+                <input type="text" name="email" placeholder="email" id="email-input">
+                <label for="entityname">Entity Name: </label>
+                <input type="text" name="entityname" placeholder="entityname" id="entityname-input">
+                <label for="location">Location: </label>
+                <input type="text" name="location" placeholder="location" id="location-input">
+                <label for="date">Date: </label>
+                <input type="date" name="date" placeholder="Date" id="date-input" required>
+                <input type="submit" value="Submit" id="post-button" class="btn btn-success">
+            </form>
+ -->
+		  <table id="customersList">
+			<thead>
+				<tr>
+					<th>customer ID</th>
+					<th>E-mail</th>
+					<th>Entity Name</th>
+					<th>Location</th>					
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+				<tbody id="customerListBody">
+				</tbody>
+			</table>
+    	
+	
+        </div>
+
+        <script src="customers.js"></script>
+</body>
+
+
+</div>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Current Contracts</title>
+    <link rel="stylesheet" type="text/css" href="ContractSalesOrder.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 style="font-size: 20px;">Contract Orders</h1>
+        <div class="container">
+        </div>
+    </div>
+    <style>
+        div.scrollmenu {
+            background-color: #333;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+        
+        div.scrollmenu a:hover {
+            background-color: #777;
+        }
+    </style>
+    <div class="scrollmenu">
+        <a href="index.html">Home</a>
+        <a href="PurchaseOrder.html">The Purchase Order</a>
+        <a href="CurrentCustomers.html">Current Customers</a>
+        <a href="JobScheduling.html">Engineer Booking</a>
+        <a href="EnterFSRreport.html">Enter FSR Report</a>
+        <div class="input-group">
+            <input type="search" class="form-control rounded" id="search-key" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" id="search-button" class="search">search</button>
+        </div>
+
+    </div>
+
+    <div id="wrapper">
+
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <title>Contract Sales Orders</title>
+
+        </head>
+
+        <body>
+            <div class="container-fluid" id="container-div">
+                <h2>Add Contract Order:</h2>
+                <form id="post-form">
+<!--                     <label for="salesorderID">Sales Order Number: </label>
+                    <input type="number" name="SO" placeholder="salesorderID" id="salesorder-input" required> -->
+                    <label for="customerID">Customer ID: </label>
+                    <input type="number" name="name" placeholder="customerID" id="name-input" required>
+                    <label for="POnumber">PO Number: </label>
+                    <input type="number" name="ponumber" placeholder="540000" id="PO-input"></br>
+                    <label for="status"> Completed? </label>
+                    <input type="radio" name="status" id="completed-input0" value="0" required>
+                    <label for="status" class="status">Yes </label>
+                    <input type="radio" name="status" id="completed-input1" value="1" required>
+                    <label for="status" class="status">No </label>
+                    <label for="servicetype">Service Type: </label>
+                    <input type="text" name="servicetype" placeholder="servicetype" id="servicetype-input">
+                    <label for="dollarAmount">Dollar Amount: </label>
+                    <input type="number" name="dollarAmount" placeholder="$" id="dollar-input"></br>
+                    <label for="location">Location: </label>
+                    <input type="text" name="location" placeholder="location" id="location-input">
+                    <label for="employeeID">Employee ID: </label>
+                    <input type="number" name="name" placeholder="employeeID" id="employeeID-input">
+                    <input type="submit" value="Submit" id="post-button" class="btn btn-success">
+
+                </form>
+                <h2>Update/Delete Sales Orders Information:</h2>
+
+                <!--                 <form id="update-form"> -->
+                <!--                     <h2>Update Sales Order:</h2>
+                    <label for="salesorderID">Sales Order Number: </label>
+                    <input type="number" name="SO" placeholder="salesorderID" id="salesorder-input" required>
+                    <label for="customerID">Customer ID: </label>
+                    <input type="number" name="name" placeholder="customerID" id="name-input" required>
+                    <label for="POnumber">PO Number: </label>
+                    <input type="number" name="ponumber" placeholder="540000" id="PO-input">
+                    <label for="status"> Completed? </label>
+                    <input type="radio" name="status" id="completed-input0" value="0" required>
+                    <label for="status" class="status">Yes </label>
+                    <input type="radio" name="status" id="completed-input1" value="1" required>
+                    <label for="status" class="status">No </label>
+                    <input type="radio" name="status" id="completed-input2" value="2" required>
+                    <label for="status" class="status">Other </label>
+                    <label for="servicetype">Service Type: </label>
+                    <input type="text" name="servicetype" placeholder="servicetype" id="servicetype-input">
+                    <label for="entityname">Entity Name: </label>
+                    <input type="text" name="entityname" placeholder="entityname" id="entityname-input">
+                    <label for="dollarAmount">Dollar Amount: </label>
+                    <input type="number" name="dollarAmount" placeholder="$" id="dollar-input">
+                    <label for="location">Location: </label>
+                    <input type="text" name="location" placeholder="location" id="location-input">
+                    <input type="submit" value="Submit" id="post-button" class="btn btn-success"> -->
+                <!--                 </form> -->
+
+                <table id="salesorderList">
+                    <thead>
+                        <tr>
+                            <th>Sales Order Number</th>
+                            <th>Customer ID</th>
+                            <th>PO Number</th>
+                            <th>Completed?</th>
+                            <th>Service Type</th>
+                            <th>Dollar Amount</th>
+                            <th>Location</th>                            
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="salesorderListBody">
+                    </tbody>
+                </table>
+
+
+            </div>
+
+            <script src="ContractSalesOrder.js"></script>
+    </div>
+
+    </body>
+
+
+
+    </div>
+
+
+    </div>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

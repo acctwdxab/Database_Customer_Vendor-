@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Purchase Order</title>
+    <link rel="stylesheet" type="text/css" href="purchaseorder.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 style="font-size: 20px;">Purchase Orders</h1>
+        <div class="container">
+        </div>
+    </div>
+    <style>
+        div.scrollmenu {
+            background-color: #333;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+        
+        div.scrollmenu a:hover {
+            background-color: #777;
+        }
+    </style>
+    <div class="scrollmenu">
+        <a href="index.html">Home</a>
+        <a href="CurrentCustomers.html">Current Customers</a>
+        <a href="ContractSalesOrder.html">Current Sales Order</a>
+        <a href="JobScheduling.html">Engineer Booking</a>
+        <a href="EnterFSRreport.html">Enter FSR Report</a>
+        <div class="input-group">
+            <input type="search" class="form-control rounded" id="search-key" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" id="search-button" class="search">search</button>
+        </div>
+
+
+    </div>
+
+    <div id="wrapper">
+
+
+        <title>Purchase Orders</title>
+
+
+
+        <body>
+            <div class="container-fluid" id="container-div">
+                <h2>Add Purchase Order:</h2>
+                <form id="post-form">
+<!--                     <label for="POnumber">PO Number: </label>
+                    <input type="number" name="ponumber" placeholder="540000" id="PO-input"></br> -->
+                    <label for="customerID">Customer ID: </label>
+                    <input type="number" name="customerID" placeholder="29000" id="customerID-input">
+                    <label for="date">Date of The Order: </label>
+                    <input type="date" name="dateoforder" placeholder="date of order" id="date-input" required>
+		    <label for="dollarAmount">Dollar Amount: </label>
+                    <input type="number" name="dollarAmount" placeholder="$" id="dollar-input">
+                    <input type="submit" value="Submit" id="post-button" class="btn btn-success">
+
+
+                </form>
+
+	<h2>Update/Delete Purchase Order Information:</h2>
+
+<!--                 <form id="update-form">
+            
+                    <input type="text" name="name" placeholder="customerID" id="name-input" required>
+                    <label for="customerID">Customer ID: </label>
+                    <input type="number" name="customerID" placeholder="29000" id="customerID-input">
+                    <label for="dateoforder">PO Date: </label>
+                    <input type="date" name="dateoforder" placeholder="date of order" id="date-input" required>
+                    <label for="POnumber">PO Number: </label>
+                    <input type="number" name="ponumber" placeholder="540000" id="PO-input">
+                    <label for="dollarAmount">Dollar Amount: </label>
+                    <input type="number" name="dollarAmount" placeholder="$" id="dollar-input">
+                    <input type="submit" value="Submit" id="post-button" class="btn btn-success">
+
+
+                </form> -->
+                <table id="poList">
+                    <thead>
+                        <tr>
+                            <th>PO Number</th>
+							<th>Customer ID</th>
+                            <th>Order Date</th>                            
+                            <th>Dollar Amount</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                        <tbody id="poListBody">
+                        </tbody>
+                    </table>
+            </div>
+      
+        </body>
+    
+ 
+        <script src="purchaseOrder.js"></script>
+    </div>
+  
+
+    </div>
+
+
+
+
+    </div>
+
+
+
+
+</html>

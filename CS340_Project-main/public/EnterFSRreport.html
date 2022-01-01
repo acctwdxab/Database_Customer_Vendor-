@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Enter FSR Report</title>
+    <link rel="stylesheet" type="text/css" href="fsr.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 style="font-size: 20px;">FSR Report</h1>
+        <div class="container">
+        </div>
+    </div>
+    <style>
+        div.scrollmenu {
+            background-color: #333;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+        
+        div.scrollmenu a:hover {
+            background-color: #777;
+        }
+    </style>
+    <div class="scrollmenu">
+        <a href="index.html">Home</a>
+        <a href="PurchaseOrder.html">The Purchase Order</a>
+        <a href="CurrentCustomers.html">Current Customers</a>
+        <a href="ContractSalesOrder.html">Current Sales Order</a>
+        <a href="JobScheduling.html">Engineer Booking</a>
+        <div class="input-group">
+            <input type="search" class="form-control rounded" id="search-key" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" id="search-button" class="search">search</button>
+        </div>
+
+
+    </div>
+
+    <div id="wrapper">
+       
+
+        <body>
+            <div class="container-fluid" id="container-div">
+                <h2>Add FSR Report:</h2>
+                <form id="post-form">
+                    <label for="salesorderID">Sales Order Number: </label>
+                    <input type="number" name="SO" placeholder="salesorderID" id="salesorder-input" required>
+                    <label for="employeeID">Employee ID: </label>
+                    <input type="number" name="employeeID" placeholder="000000" id="employeeID-input" required>
+<!--                     <label for="reportID">Report Number: </label>
+                    <input type="number" name="reportID" placeholder="290000000000000" id="reportID-input"> -->
+                    <input type="submit" value="Submit" id="post-button" class="btn btn-success">
+
+                </form>
+
+
+
+<!--                 <form id="update-form"> -->
+            <h2>Update job Information:</h2>
+            <table id="fsrList">
+                <thead>
+                    <tr>
+                        <th>Report Number</th>
+						<th>Sales Order Number</th>
+                        <th>Employee ID</th>                        
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                    <tbody id="fsrListBody">
+                    </tbody>
+                </table>
+
+<!--                     <label for="salesorderID">Sales Order Number: </label>
+                    <input type="number" name="SO" placeholder="salesorderID" id="salesorder-input" required>
+                    <label for="employeeID">Employee ID: </label>
+                    <input type="number" name="employeeID" placeholder="000000" id="employeeID-input">
+                    <label for="reportID">Report Number: </label>
+                    <input type="number" name="reportID" placeholder="290000000000000" id="reportID-input">
+                    <input type="submit" value="Submit" id="post-button" class="btn btn-success">
+
+
+                </form>
+ -->
+            </div>
+         
+            <script src="EnterFSRreport.js"></script>
+        </body>
+
+
+    </div>
+
+
+    </div>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
